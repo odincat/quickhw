@@ -62,7 +62,7 @@ const LinkGenerator = () => {
                 </form>
             </div>
             <div className="center">
-                <a href={link} target="_blank" rel="noopener"><button type="submit" onClick={resetForm}>Create Task</button></a>
+                <a href={link} target="_blank" rel="noreferrer"><button type="submit" onClick={resetForm}>Create Task</button></a>
             </div>
         </div>
     );

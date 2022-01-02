@@ -54,7 +54,7 @@ const LinkGenerator = () => {
                 <h3>Subject: </h3>
                     <select ref={subjectSelect} name="subject" onChange={changeSubject} value={subject}>
                         {subjects.map((option) => (
-                            <option value={option.value} label={option.label} key={option.key} />
+                            <option value={option.value} label={option.label} key={option.key}>{option.label}</option>
                         ))}
                     </select> <br/>
                     <h3>Task: </h3>

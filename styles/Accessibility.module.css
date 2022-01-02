@@ -1,0 +1,17 @@
+/* #region SkipNavLink */
+/* Yes I know this shouldn't be camel case */
+.skipNavLink {
+  position: absolute;
+  transform: translateY(-120%) translateX(-120%);
+  background-color: black;
+  color: white;
+  padding: 7px;
+  margin: 7px 0 0 7px;
+  border-radius: 5px;
+  transition: transform 100ms ease-in;
+}
+.skipNavLink:focus {
+  transform: translateY(0) translateX(0);
+}
+
+/* #endregion */

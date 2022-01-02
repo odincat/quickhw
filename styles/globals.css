@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap");
+/* font-family: 'M PLUS 1', sans-serif; */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/fonts/montserrat/montserrat-v18-latin-regular.woff2") format("woff2"), url("/fonts/montserrat/montserrat-v18-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.pagecontainer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.generate-link header {
+  margin-top: 20px;
+  text-align: center;
+}
+.generate-link .generate-link-main {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.generate-link .generate-link-main textarea {
+  height: 70px;
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.generate-link .generate-link-main select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.generate-link .generate-link-main label, .generate-link .generate-link-main select, .generate-link .generate-link-main textarea {
+  margin-bottom: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center button {
+  padding: 10px 15px;
+}

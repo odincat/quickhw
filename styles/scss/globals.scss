@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+/* font-family: 'M PLUS 1', sans-serif; */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/montserrat/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/montserrat/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+$font-face-primary: 'Montserrat', sans-serif;
+$font-face-secondary: 'M PLUS 1', sans-serif;
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $font-face-primary;
+  color: black;
+}
+
+.pagecontainer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.generate-link {
+  header {
+  margin-top: 20px;
+  text-align: center;
+  }
+
+  .generate-link-main {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    textarea {
+      height: 70px;
+      width: 300px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    select {
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    label, select, textarea {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 10px 15px;
+  }
+}

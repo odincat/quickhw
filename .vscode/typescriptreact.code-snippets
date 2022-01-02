@@ -1,0 +1,41 @@
+{
+	 "Create a new page": {
+	 	"prefix": "npg",
+	 	"body": [
+	 		"import MetatagConfig from '@comp/MetatagManager';",
+			"import type { NextPage } from 'next';",
+			" ",
+			"const ${1:PageName}: NextPage = () => {",
+			"  return (",
+			"      <main>",
+			"        <MetatagConfig defaultTitleFormat={true} title='${1:Page }' />",
+			"        $0",
+			"      </main>",
+			"  );",
+			"};",
+			"",
+			"export default ${1:Page };"
+
+	 	],
+	 	"description": "Generate a new page.",
+        "scope": "typescriptreact"
+	 },
+	 "Create a new Component": {
+		"prefix": "ncp",
+		"body": [
+		   "const ${1:ComponentName} = () => {",
+		   "",
+		   "  return (",
+		   "      <main>",
+		   "        $0",
+		   "      </main>",
+		   "  );",
+		   "};",
+		   "",
+		   "export default ${1:ComponentName};"
+
+		],
+		"description": "Generate a new component.",
+	   "scope": "typescriptreact"
+	}
+}

@@ -23,7 +23,7 @@ export const subjects = [
     },
     {
         label: 'Werte & Normen',
-        value: 'Werte%20&%20Normen',
+        value: 'Werte%20ALT+38%20Normen',
         key: 'wn'
     },
     {

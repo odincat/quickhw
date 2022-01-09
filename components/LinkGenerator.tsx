@@ -12,7 +12,7 @@ const LinkGenerator = () => {
     var when;
 
     const taskText = useRef(null);
-    
+
     const resetForm = () => {
         setLinkTask('  ');
     };
@@ -60,6 +60,7 @@ const LinkGenerator = () => {
             </div>
             <div className="center">
                 <a href={link} target="_blank" rel="noreferrer"><button type="submit" onClick={resetForm}>Create Task</button></a>
+                Debug: {link}
             </div>
         </div>
     );

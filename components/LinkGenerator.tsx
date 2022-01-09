@@ -2,41 +2,38 @@ import { subjects } from "@lib/subjects";
 import { useEffect, useRef, useState } from "react";
 
 const LinkGenerator = () => {
-    var subject;
-    var task;
+    var list = 'Hausaufgaben';
 
     const [linkSubject, setLinkSubject] = useState('');
     const [linkTask, setLinkTask] = useState('');
+    const [link, setLink] = useState(``);
 
+    //TODO: Add Date support
     var when;
 
     const taskText = useRef(null);
+    
     const resetForm = () => {
         setLinkTask('  ');
     };
     
-    const [link, setLink] = useState(``);
-
     const changeSubject = (e) => {
-        subject = e.target.value;
-        setLinkSubject(subject);
+        setLinkSubject(e.target.value);
     };
 
     const changeTask = (e) => {
-        task = e.target.value;
-        setLinkTask(task);
+        setLinkTask(e.target.value);
     }
 
     const subjectSelect = useRef(null);
 
     useEffect(() => {
-        subject = subjectSelect.current.value;
-        setLinkSubject(subject);
-        console.log(subject);
+        setLinkSubject(subjectSelect.current.value);
+        console.log(linkSubject);
     }, []);
 
     useEffect(() => {
-        setLink(`things:///add?title=%5B${linkSubject}%5D%20${linkTask}&list=Hausaufgaben`);
+        setLink(`things:///add?title=%5B${linkSubject}%5D%20${linkTask}&list=${list}`);
     }, [linkSubject, linkTask]);
 
     const submitForm = (e) => {
@@ -52,7 +49,7 @@ const LinkGenerator = () => {
             <div className="generate-link-main">
                 <form onSubmit={submitForm}>
                 <h3>Subject: </h3>
-                    <select ref={subjectSelect} name="subject" onChange={changeSubject} value={subject}>
+                    <select ref={subjectSelect} name="subject" onChange={changeSubject}>
                         {subjects.map((option) => (
                             <option value={option.value} label={option.label} key={option.key}>{option.label}</option>
                         ))}

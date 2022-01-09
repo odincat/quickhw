@@ -1,3 +1,5 @@
+// value: Replace spaces with %20
+
 export const subjects = [
     {
         label: 'Französisch',
@@ -21,7 +23,7 @@ export const subjects = [
     },
     {
         label: 'Werte & Normen',
-        value: 'Werte & Normen',
+        value: 'Werte%20&%20Normen',
         key: 'wn'
     },
     {
